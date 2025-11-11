@@ -1,11 +1,24 @@
 name: sync_translations
-description: A sample command-line application.
-version: 1.0.2
-# repository: https://github.com/my_org/my_repo
-environment:
-  sdk: ^3.9.2
+description: >
+  A Dart CLI tool that synchronizes translation files across multiple locales
+  by ensuring all keys are consistent and complete between source and target files.
 
-# Add regular dependencies here.
+version: 1.0.3
+
+repository: https://github.com/ma7moud3osman/sync_translations
+homepage: https://github.com/ma7moud3osman/sync_translations
+issue_tracker: https://github.com/ma7moud3osman/sync_translations/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+topics:
+  - localization
+  - translations
+  - cli
+  - dart
+  - automation
+
 dependencies:
   path: ^1.9.0
 
@@ -15,9 +28,11 @@ dev_dependencies:
 
 executables:
   sync_translations: sync_translations
-# To Activate this application, run:
-# dart pub global activate --source path .
-# To Deactivate this application, run:
-# dart pub global deactivate sync_translations
-# To run this application, run:
+# To Activate this application globally:
+# dart pub global activate sync_translations
+#
+# To run the command:
 # sync_translations
+#
+# To deactivate:
+# dart pub global deactivate sync_translations
